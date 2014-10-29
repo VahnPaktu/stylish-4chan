@@ -1,6 +1,7 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document domain(boards.4chan.org),domain(rs.4chan.org),domain(sys.4chan.org)
 {
+/* AGENT_SHEET */
     *
     {
         font-family: Palatino Linotype !important ;
@@ -24,6 +25,7 @@
         color:#7d6004 !important ;
         text-decoration:none !important ;
         font-weight:normal !important ;
+        
     }
     a:hover
     {
@@ -34,7 +36,7 @@
     {
         display:none !important  ;
     }
-    a[href="javascript:;"] 
+    a[href="javascript:;"]
     {
         text-decoration:none !important ;
     }
@@ -52,7 +54,7 @@
         vertical-align:top!important;
         font-size:10px !important ;
         position: fixed!important; 
-        right: -315px!important; 
+        right: -395px!important; 
         top:6%!important; 
         margin-left: 100%!important; 
         margin-right: 0%!important; 
@@ -82,7 +84,7 @@
     {
         height: 10px !important; 
         width: 10px !important}
-    table.postForm INPUT[name="sub"] + INPUT[value="Submit"] 
+    table.postForm INPUT[name="sub"] + INPUT[value="Post"] 
     {
         height: 24px!important; 
         width: 55px !important;
@@ -90,6 +92,12 @@
         padding: 0px !important;
         vertical-align: top!important
     }
+    table.postForm div#captchaContainer
+    {
+     display:none!important  ;
+    }
+    
+ 
     table#recaptcha_table
     {
         width: 300px !important
